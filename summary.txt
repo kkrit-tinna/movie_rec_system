@@ -1,0 +1,46 @@
+Leanrning objectives:
+1. Learn about two types of candidate generation: content-based filtering & collaborative filtering
+2. Learn to conduct typical model building workflow
+2. Learn several sickit learn packages that help preprocess data for content-based filtering
+3. Learn to use dot product as similarity measure
+4. Learn to deploy an API for user input & rerank the recommendation system 
+
+Model Development: 
+data cleaning
+    eliminating null values & duplicates
+    pay attention to value counts and find out if each category is unique
+    pay attention to the data types, and whether more relevant data can be extracted
+feature selection
+    need to find which features are relevant for our model
+multi-label encoding
+    encode categorical features using multilabel binarizer
+feature engineering
+    convert categorical data to numeric using dummy variables (only major categories)
+one-hot encoding
+    transform all categorical features(now boolean val) into a sparse matrix with only 1 one and all zeroes in each row
+normalization
+    need to normalize all numetic features using standard scaler
+cosine similarity
+    develop cosine simlarity matrix using preprocessed data
+    combine similarity scores from genres, overview, and keywords with adjustable weights
+
+Improvement:
+no collaborative content filtering -- due to the lack of data accuracy in columns such as 
+no re-- maybe design an api and deploy it 
+
+
+Resources:
+content-based filtering:
+https://developers.google.com/machine-learning/recommendation/content-based/basics
+history of films:
+https://en.wikipedia.org/wiki/History_of_film
+different movie eras:
+https://www.videomaker.com/how-to/directing/film-history/film-history-the-evolution-of-film-and-television/
+word embedding using word2vec
+https://www.geeksforgeeks.org/python-word-embedding-using-word2vec/
+principal component analysis
+https://scikit-learn.org/stable/modules/generated/sklearn.decomposition.PCA.html
+k means clustering
+https://www.geeksforgeeks.org/k-means-clustering-introduction/
+k means inertia
+https://www.codecademy.com/learn/dspath-unsupervised/modules/dspath-clustering/cheatsheet
